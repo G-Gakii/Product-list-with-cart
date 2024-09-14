@@ -37,22 +37,22 @@ Users should be able to:
 
 #### mobile
 
-![mobile display](https://github.com/G-Gakii/ProductListWithCart/blob/main/public/screenshot/mobile.png)
+![mobile display](https://github.com/G-Gakii/Product-list-with-cart/blob/main/public/screenshot/mobile.png)
 
 ####desktop
-![desktop display](https://github.com/G-Gakii/ProductListWithCart/blob/main/public/screenshot/desktop.png)
+![desktop display](https://github.com/G-Gakii/Product-list-with-cart/blob/main/public/screenshot/desktop.png)
 
 ### Links
 
-- Solution URL: (http://localhost:4200/order)
-- Live Site URL: (https://product-list-with-cart-fawn.vercel.app/order)
+- Solution URL: (http://localhost:4200/)
+- Live Site URL: (https://product-list-with-cart-unuo.vercel.app/product)
 
 ## My process
 
 ### Built With
 
 - Angular
-- [Tailwind CSS](https://tailwindcss.com/)
+- Sass
 
 ### Prerequisites
 
@@ -65,9 +65,9 @@ Users should be able to:
 2. npm install
 3. ng serve
 
-### What I learned
 
-1. mapping DTO to domain model
+
+
 
 ## Author
 
