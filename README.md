@@ -1,27 +1,76 @@
-# Productlist
+# Frontend Mentor - Product list with cart solution
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.2.
+This is a solution to the [Product list with cart challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/product-list-with-cart-5MmqLVAp_d). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-## Development server
+## Table of contents
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- [Frontend Mentor - Product list with cart solution](#frontend-mentor---product-list-with-cart-solution)
+  - [Table of contents](#table-of-contents)
+  - [Overview](#overview)
+    - [The challenge](#the-challenge)
+    - [Screenshot](#screenshot)
+      - [mobile](#mobile)
+    - [Links](#links)
+  - [My process](#my-process)
+    - [Built With](#built-with)
+    - [Prerequisites](#prerequisites)
+    - [Installation](#installation)
+    - [What I learned](#what-i-learned)
+  - [Author](#author)
 
-## Code scaffolding
+**Note: Delete this note and update the table of contents based on what sections you keep.**
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Overview
 
-## Build
+### The challenge
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Users should be able to:
 
-## Running unit tests
+- Add items to the cart and remove them
+- Increase/decrease the number of items in the cart
+- See an order confirmation modal when they click "Confirm Order"
+- Reset their selections when they click "Start New Order"
+- View the optimal layout for the interface depending on their device's screen size
+- See hover and focus states for all interactive elements on the page
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Screenshot
 
-## Running end-to-end tests
+#### mobile
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+![mobile display](https://github.com/G-Gakii/ProductListWithCart/blob/main/public/screenshot/mobile.png)
 
-## Further help
+####desktop
+![desktop display](https://github.com/G-Gakii/ProductListWithCart/blob/main/public/screenshot/desktop.png)
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+### Links
+
+- Solution URL: (http://localhost:4200/order)
+- Live Site URL: (https://product-list-with-cart-fawn.vercel.app/order)
+
+## My process
+
+### Built With
+
+- Angular
+- [Tailwind CSS](https://tailwindcss.com/)
+
+### Prerequisites
+
+- Node.js
+- Angular CLI
+
+### Installation
+
+1. Clone the repo : git clone<code>
+2. npm install
+3. ng serve
+
+### What I learned
+
+1. mapping DTO to domain model
+
+## Author
+
+- Website - [Gallant_G](https://www.your-site.com)
+- Frontend Mentor - [G_Gakii](https://www.frontendmentor.io/profile/yourusername)
+- Twitter - [Gallant_Gakii](https://www.twitter.com/yourusername)

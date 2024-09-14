@@ -1,0 +1,90 @@
+@import "../../../styles/variable";
+
+.cart_container {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 1rem;
+  min-width: 400px;
+  h2 {
+    color: $orange600;
+  }
+  .empty {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    p {
+      color: $Rose500;
+    }
+  }
+  ul {
+    list-style-type: none;
+    li {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.5rem 0;
+      border-bottom: 1px solid $Rose100;
+      .item_des {
+        h3 {
+          color: $Rose900;
+          font-weight: 500;
+          font-size: 1rem;
+        }
+        .price {
+          display: flex;
+          align-items: center;
+          h4 {
+            color: $orange600;
+            margin-right: 0.5rem;
+          }
+          h5 {
+            color: $Rose400;
+            font-weight: 300;
+            margin-right: 0.5rem;
+          }
+        }
+      }
+      .cancel {
+        width: 1.5rem;
+        height: 1.5rem;
+        border: 1px solid $Rose300;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+  .total_price {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+  }
+  .carbon {
+    display: flex;
+    font-size: 1rem;
+    background-color: $Rose50;
+    padding: 1.5rem 0.5rem;
+    border-radius: 0.6rem;
+    img {
+      margin-right: 0.2rem;
+    }
+  }
+  button {
+    background-color: $orange600;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 1.5rem;
+    font-size: 1rem;
+  }
+}
+.display {
+  display: block;
+}
+.hid {
+  display: none;
+}

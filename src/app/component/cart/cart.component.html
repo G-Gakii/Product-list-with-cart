@@ -1,0 +1,49 @@
+<div class="cart_container">
+  <h2>Your Cart ( {{ Quantity() }} )</h2>
+  @if(cartProduct.length===0){
+  <div class="empty">
+    <img src="assets/images/illustration-empty-cart.svg" alt="empty cart" />
+    <p>Your added items will appear here</p>
+  </div>
+
+  }@else {
+  <ul>
+    @for (item of cartProduct; track $index) {
+    <li>
+      <div class="item_des">
+        <h3>{{ item.name }}</h3>
+        <div class="price">
+          <h4>{{ item.quantity }} X</h4>
+          <h5>{{ item.price | currency : "USD" }}</h5>
+          <h5>{{ ItemTotal($index) | currency : "USD" }}</h5>
+        </div>
+      </div>
+      <div class="cancel" (click)="removeItem($index)">
+        <img
+          src="
+          assets/images/icon-remove-item.svg"
+          alt="remove icon"
+        />
+      </div>
+    </li>
+    }
+  </ul>
+  <div class="total_price">
+    <p>Order Total</p>
+    <p>{{ overallPrice() | currency : "USD" }}</p>
+  </div>
+  <div class="carbon">
+    <img
+      src="assets/images/icon-carbon-neutral.svg"
+      alt="carbon neutral icon"
+    />
+    <p>This is a <b> carbon-neutral</b> delivery</p>
+  </div>
+  <button (click)="confirmOrder()">Confirm Order</button>
+  }
+</div>
+
+<app-order
+  [ngClass]="displayOrder ? 'display' : 'hid'"
+  [orderedItem]="cartProduct"
+></app-order>

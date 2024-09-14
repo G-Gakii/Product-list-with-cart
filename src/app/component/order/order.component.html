@@ -1,0 +1,35 @@
+<div class="overall_container" [ngClass]="show ? 'overall_container' : 'hid'">
+  <div class="order_container">
+    <img src="assets/images/icon-order-confirmed.svg" alt="confirmed icon" />
+    <h2>Order Confirmed</h2>
+    <p>We hope you enjoy your food!</p>
+
+    <ul>
+      @for (item of orderedItem; track $index) {
+      <li>
+        <div class="image_content">
+          <img [src]="item.image.thumbnail" alt="ordered items" />
+          <div class="item_details">
+            <h3>{{ item.name }}</h3>
+            <div class="item_price">
+              <h4>{{ item.quantity }} X</h4>
+              <h5>{{ item.price | currency : "USD" }}</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="total">
+          <h5>{{ ItemTotal($index) | currency : "USD" }}</h5>
+        </div>
+      </li>
+
+      }
+      <li class="total_price">
+        <p>Order Total</p>
+        <p>{{ overallPrice() | currency : "USD" }}</p>
+      </li>
+    </ul>
+
+    <button (click)="navigateToPage()">Start new Order</button>
+  </div>
+</div>

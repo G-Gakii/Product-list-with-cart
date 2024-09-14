@@ -1,1 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import "./styles/variable";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: $font-family;
+  background-color: $Rose100;
+  min-width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
